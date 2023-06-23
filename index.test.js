@@ -9,7 +9,7 @@ describe('API', () => {
     const response = await getUsers();
     expect(response).toBeDefined();
     expect(response.data).toBeDefined();
-    // Add more assertions as required
+    
   });
 
   test('should create a new user successfully', async () => {
@@ -21,7 +21,7 @@ describe('API', () => {
     expect(response).toBeDefined();
     expect(response.name).toBe(user.name);
     expect(response.job).toBe(user.job);
-    // Add more assertions as required
+ 
   });
 
   test('should update an existing user successfully', async () => {
@@ -34,12 +34,12 @@ describe('API', () => {
     expect(response).toBeDefined();
     expect(response.name).toBe(updatedUser.name);
     expect(response.job).toBe(updatedUser.job);
-    // Add more assertions as required
+   
   });
 
   test('should delete a user successfully', async () => {
     const userId = 2;
     await expect(deleteUser(userId)).resolves.not.toThrow();
-    // Add more assertions as required
+    
   });
 });
