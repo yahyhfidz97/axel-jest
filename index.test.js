@@ -1,35 +1,7 @@
-// const request = require("supertest");
-// const expect = require("chai").expect;
-
-// api.js
 
 
 
-// describe("Name of the group", () =>{
-//     it('should', async () => {
-//         const resp = await request("https://reqres.in/api/users");
-    
-        
-//         console.log(resp["id"]);
-//         // console.log("status code", resp.statusCode);
-//         // expect(resp.statusCode).toBe(200);
-//         // console.log("bodyResponse", resp.body);
-//         // expect(resp.statusCode).to.equal(200);
-//         // expect(resp.body).to.have.all.keys(
-//         //     "userId",
-//         //     "id",
-//         //     "title",
-//         //     "body"
-//         // );
-//         // expect(resp["body"]["userId"]).to.eql(1);
-        
 
-   
-//     });
-// })
-
-
-// api.test.js
 const { getUsers, createUser, updateUser, deleteUser } = require('./index');
 
 describe('API', () => {
